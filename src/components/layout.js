@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from 'styled-components'
 import { Gray as theme } from '../themes/Gray'
+import { Footer, Main } from '../components/Element'
 
 import Header from "./header"
 import "./layout.css"
@@ -37,12 +38,12 @@ const Layout = ({ children }) => (
               paddingTop: 0,
             }}
           >
-            <main>{children}</main>
-            <footer>
+            <Main>{children}</Main>
+            <Footer>
               © {new Date().getFullYear()}, Built with
               {` `}
               <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </footer>
+            </Footer>
           </div>
         </>
       )}

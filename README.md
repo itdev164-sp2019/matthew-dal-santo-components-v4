@@ -1,1 +1,1 @@
-*** Finally got it working as intended with Bit. ***
+**Finally got it working as intended with Bit.**

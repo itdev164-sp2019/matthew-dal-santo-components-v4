@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../layouts/layout"
-import Image from "../components/gatsby-components/imagey-components/image"
-import SEO from "../components/gatsby-components/seosby-components/seo"
+import Image from "../gatsby-components/image"
+import SEO from "../gatsby-components/seo"
 import { Button, IconButton, Section } from '../components/Element'
 import { Search } from 'styled-icons/feather'
 

@@ -12,7 +12,7 @@ import { ThemeProvider } from 'styled-components'
 import { Gray as theme } from '../themes/Gray'
 import { Footer, Main } from '../components/Element'
 
-import Header from "./header"
+import Header from "../components/gatsby-components/header"
 import "./layout.css"
 
 const Layout = ({ children }) => (

@@ -99,7 +99,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "sudosanto.itdev164/masthead@1.0.0": {
+    "sudosanto.itdev164/masthead@1.0.1": {
         "files": [
             {
                 "relativePath": "src/components/Masthead/Masthead.js",

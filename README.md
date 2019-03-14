@@ -16,3 +16,7 @@ The issue was the Gatsby creates and initializes a repo when you run the gatsby 
 
 bittest also works and registers changes made to the Masthead component.
 Since .bit is now in the .gitignore, you must git stash/git stash pop to maintain your local files after you pull to the master branch.
+
+- [x] Assignment 5
+
+**Masthead and new Button components work.**

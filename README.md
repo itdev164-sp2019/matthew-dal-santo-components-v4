@@ -20,3 +20,5 @@ Since .bit is now in the .gitignore, you must git stash/git stash pop to maintai
 - [x] Assignment 5
 
 **Masthead and new Button components work.**
+
+- [ ] Assignment 6

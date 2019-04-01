@@ -21,4 +21,8 @@ Since .bit is now in the .gitignore, you must git stash/git stash pop to maintai
 
 **Masthead and new Button components work.**
 
-- [ ] Assignment 6
+- [x] Assignment 6
+
+**MastheadDrawer now works.
+
+- [ ] Assignment 7

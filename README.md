@@ -23,6 +23,6 @@ Since .bit is now in the .gitignore, you must git stash/git stash pop to maintai
 
 - [x] Assignment 6
 
-**MastheadDrawer now works.
+**MastheadDrawer now works.**
 
 - [ ] Assignment 7

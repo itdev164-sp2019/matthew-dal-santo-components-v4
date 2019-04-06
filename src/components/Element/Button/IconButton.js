@@ -1,4 +1,5 @@
-import React from 'react'
+// @flow
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { ButtonBase } from './ButtonBase'
@@ -7,9 +8,17 @@ const StyledButton = styled(ButtonBase)`
   ${props => props.theme.variants.iconButton[props.variant || 'primary']};
 `
 
-export const IconButton = styled(({ icon, ...props }) => {
-  let clone = React.cloneElement(icon, ...props)
-  return <StyledButton as={clone.type} {...props} className={props.className} />
+export const IconButton = styled(({ 
+  icon,
+  className, 
+  ...props
+  }: {
+    icon: React.Element<*>,
+    className: string,
+    props: any
+  }) => {
+  let clone = React.cloneElement(icon, props)
+  return <StyledButton as={clone.type} {...props} className={className} />
 })`
   // We could add styles here, but it is not necessary.
   // The main reason this is a styled component is to wrap the styled icon passed in as a prop.
@@ -21,5 +30,6 @@ IconButton.defaultProps = {
 
 IconButton.propTypes = {
   icon: PropTypes.node.isRequired,
-  variant: PropTypes.string
+  variant: PropTypes.string,
+  className: PropTypes.string
 }

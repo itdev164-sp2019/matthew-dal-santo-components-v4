@@ -6,8 +6,10 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
+    "flow-typed": "^2.5.1",
     "gatsby": "^2.1.19",
     "gatsby-image": "^2.0.30",
+    "gatsby-plugin-flow": "^1.0.4",
     "gatsby-plugin-manifest": "^2.0.20",
     "gatsby-plugin-offline": "^2.0.24",
     "gatsby-plugin-react-helmet": "^3.0.7",
@@ -25,6 +27,8 @@
     "styled-icons": "^7.4.0"
   },
   "devDependencies": {
+    "flow-bin": "^0.96.0",
+    "flow-remove-types": "^1.2.3",
     "prettier": "^1.16.4"
   },
   "keywords": [
@@ -37,6 +41,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "flow": "flow",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {

@@ -1,7 +1,14 @@
-import React from 'react'
+// @flow
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import styled, { ThemeConsumer } from 'styled-components'
 import { BaseContainer } from '../Element'
+
+const deviceEnum = {
+    phone: 'phone', 
+    tablet: 'tablet', 
+    desktop: 'desktop'
+}
 
 const Query = styled(BaseContainer)`
     @media only screen and (max-width: ${props => props.size / 16}em) {
@@ -9,7 +16,17 @@ const Query = styled(BaseContainer)`
     }
 `
 
-export const MediaQuery = ({ device, theme, children, ...props }) => {
+export const MediaQuery = ({ 
+    device, 
+    children, 
+    theme, 
+    ...props 
+}: {
+    device: $Keys<typeof deviceEnum>, 
+    children: React.Node, 
+    theme: any, //not sure how to type
+    props: any
+}) => {
     return (
         <ThemeConsumer>
             {theme => {

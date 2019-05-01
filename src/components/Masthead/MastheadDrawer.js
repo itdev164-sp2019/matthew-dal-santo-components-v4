@@ -1,5 +1,4 @@
-// @flow
-import * as React from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Flex } from 'rebass'
@@ -26,36 +25,22 @@ const Spacer = styled.div`
     float: none;
 `
 
-export const MastheadDrawer = ({ 
-    variant,
-    height,
-    width,
-    top,
-    children, 
-    ...props
-}: {
-    variant: string,
-    height: string,
-    width: string,
-    top: string,
-    children: React.Node, 
-    props: any
-}) =>
-    <div>
-        <Outer {...props}>
-            <Nav
-            flex
-            alignItems="center"
-            justifyContent="space-evenly"
-            width={width}
-            height={height}
-            {...props}
-            >
-                { children }
-            </Nav>
-        </Outer>
-        <Spacer {...props} />
-    </div>
+export const MastheadDrawer = ({ variant, children, width, ...props }) => (
+  <div>
+    <Outer {...props}>
+      <Nav
+        flex
+        alignItems="center"
+        justifyContent="space-evenly"
+        width={width}
+        {...props}
+      >
+        {children}
+      </Nav>
+    </Outer>
+    <Spacer {...props} />
+  </div>
+)
 
 MastheadDrawer.propTypes = {
     variant: PropTypes.string,

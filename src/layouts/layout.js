@@ -40,37 +40,37 @@ export default class Layout extends React.Component {
   state = {
     drawerOpen: true,
     prevScrollPosition: null
-  }
+  };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.checkScrollPosition.bind(this))
+    window.addEventListener('scroll', this.checkScrollPosition.bind(this));
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.checkScrollPosition.bind(this))
+    window.removeEventListener('scroll', this.checkScrollPosition.bind(this));
   }
 
   checkScrollPosition() {
-    let offset = 100
-    let { drawerOpen } = this.state
-    let scrolledDown = window.scrollY > this.prevScrollPosition
+    let offset = 100;
+    let { drawerOpen } = this.state;
+    let scrolledDown = window.scrollY > this.prevScrollPosition;
     
     scrolledDown && window.scrollY > offset
       ? drawerOpen &&
         this.setState({ drawerOpen: false, showScrollupImage: true })
       : !drawerOpen &&
-        this.setState({ drawerOpen: true, showScrollupImage: false })
+        this.setState({ drawerOpen: true, showScrollupImage: false });
     
     //  Hack to keep the header image from changing under 768px.
     if (window.matchMedia('(max-width: 768px)').matches) {
-      this.setState({ showScrollupImage: false })
+      this.setState({ showScrollupImage: false });
     }
     
-    this.prevScrollPosition = window.scrollY
+    this.prevScrollPosition = window.scrollY;
   }
 
   render() {
-    const { children } = this.props
+    const { children } = this.props;
 
     return(
       <ThemeProvider theme={theme}>
@@ -122,7 +122,7 @@ export default class Layout extends React.Component {
           )}
           />
         </ThemeProvider>
-    )
+    );
   }
 }
 

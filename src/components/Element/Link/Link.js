@@ -1,31 +1,20 @@
-// @flow
-import * as React from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { Link as BaseLink } from 'rebass'
 import styled from 'styled-components'
 
 const StyledLink = styled(BaseLink)`
-    ${props => props.theme.variants.link[props.variant || 'primary']};
+  ${props => props.theme.variants.link[props.variant || 'primary']};
 `
 
-export const Link = ({ 
-    href, 
-    variant,
-    children, 
-    ...props 
-}: {
-    href: string,
-    variant: string,
-    children: React.Node,
-    props: any
-    }) => (
-    <StyledLink href={href} {...props}>
-        {children}
-    </StyledLink>
+export const Link = ({ href, children, ...props }) => (
+  <StyledLink href={href} {...props}>
+    {children}
+  </StyledLink>
 )
 
 Link.propTypes = {
-    href: PropTypes.string.isRequired,
-    variant: PropTypes.string,
-    children: PropTypes.node.isRequired
+  href: PropTypes.string.isRequired,
+  variant: PropTypes.string,
+  children: PropTypes.node.isRequired
 }

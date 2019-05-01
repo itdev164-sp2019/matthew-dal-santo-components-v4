@@ -1,15 +1,4 @@
-// @flow
 import React from 'react'
-import PropTypes from 'prop-types'
 import { BaseContainer } from '../BaseContainer'
 
-type Props = {
-    children: PropTypes.node
-}
-
-export const Main = (props: Props) => 
-    <BaseContainer as="main" {...props} />
-
-Main.propTypes = {
-    children: PropTypes.node.isRequired
-}
+export const Main = props => <BaseContainer as="main" {...props} />

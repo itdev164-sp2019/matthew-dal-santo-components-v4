@@ -4,6 +4,7 @@ import Layout from "../layouts/layout"
 import Image from "../gatsby-components/image"
 import SEO from "../gatsby-components/seo"
 import { Button, IconButton, Section } from '../components/Element'
+import { ShareButtonList } from '../components/SocialShareButton'
 import { Text, Box } from "rebass"
 import { Search } from 'styled-icons/feather'
 
@@ -21,6 +22,13 @@ const IndexPage = () => (
       <Button variant="primary">My Custom Button!</Button>
       <IconButton icon={<Search />} />
     </Section>
+    <ShareButtonList
+      addThisPubId="ra-5cc247606906e38d"
+      googleAnalyticsId=""
+      contentTitle="Fake title"
+      contentImage="http://placekitten.com/g/300/700"
+      contentDescription="Here is an article about science things, and maybe kittens."
+    />
     <Box>
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id pulvinar mi. Morbi eu ipsum convallis turpis cursus aliquam at vel eros. Pellentesque nisi nisi, pellentesque tristique nisl sit amet, pretium imperdiet felis. Donec dictum, urna et eleifend scelerisque, sapien est ultricies turpis, dapibus rhoncus ante nisl vitae orci. Vestibulum eu auctor sapien, eget suscipit magna. Curabitur commodo lectus eu mollis volutpat. Vestibulum sit amet libero non ligula ornare tristique in vitae tortor. Phasellus eget augue in libero auctor fringilla eu quis metus. Phasellus lacus est, accumsan at porttitor id, venenatis eu dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut consectetur urna tincidunt tellus suscipit, sit amet fringilla urna gravida. Cras et justo mauris. In ut elementum lorem. Donec vitae tincidunt erat. Etiam ultricies ultrices ante, sed tempus mauris fermentum in. Etiam rutrum lorem eget pellentesque faucibus.

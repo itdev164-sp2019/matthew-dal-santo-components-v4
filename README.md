@@ -31,3 +31,6 @@ Since .bit is now in the .gitignore, you must git stash/git stash pop to maintai
 
 Something broke the MastheadDrawer component, but flow reports no errors.  I did not @flow the /Masthead/Layouts/DefaultLayout.js file as I was not sure how to do so.  Also, I was unsure how to properly type the props in MediaQuery, so the theme prop is typed as 'any'.
 
+- [x] Assignment 9
+
+**AddThis integrated successfully.**
